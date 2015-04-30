@@ -6,6 +6,7 @@ using namespace std;
 int main () {
 
     OneWire onewire = OneWire();
+    onewire.ScanBus();
 
     int devs_amount = onewire.GetDevsAmount();
     string *d = onewire.GetDevs();

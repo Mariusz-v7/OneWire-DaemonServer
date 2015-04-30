@@ -1,11 +1,17 @@
 #include "onewire.h"
-#include <iostream>
 
 using namespace std;
 
 OneWire::OneWire() {
     devs = NULL;
     devices_amount = 0;
+}
+
+void OneWire::ScanBus() {
+    ofstream scan_file;
+    scan_file.open ("/sys/bus/w1/devices/w1_bus_master1/w1_master_search");
+    scan_file << "1";
+    scan_file.close();
 }
 
 int OneWire::GetDevsAmount() {

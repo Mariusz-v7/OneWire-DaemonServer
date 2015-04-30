@@ -10,6 +10,7 @@ private:
 public:
     OneWire();
     ~OneWire();
+    void ScanBus();
     int GetDevsAmount();
     std::string *GetDevs();
     float Read(std::string dev_id);
