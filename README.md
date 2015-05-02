@@ -1,1 +1,1 @@
-# OneWire-DaemonServer
+# OneWire-LinuxLibrary
