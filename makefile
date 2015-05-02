@@ -1,4 +1,4 @@
-CC = g++-4.7
+CC = g++
 CFLAGS = -std=c++11 -Wall -Wextra -Wunused -c  -fPIC -c
 LDFLAGS = 
 

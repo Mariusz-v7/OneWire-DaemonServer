@@ -69,6 +69,8 @@ float OneWire::Read(string dev_id) {
     }
     file.close();
 
+    if (val < ONEWIRE_MIN_VAL) return val;
+
     return val/1000.0;
 }
 
