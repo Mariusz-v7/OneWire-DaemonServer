@@ -2,6 +2,7 @@
 #include <fstream>
 
 #define     ONEWIRE_BAD_CRC         -100000
+#define     ONEWIRE_BAD_VAL         -100001
 
 class OneWire {
 private:

@@ -50,7 +50,7 @@ string *OneWire::GetDevs() {
 
 
 float OneWire::Read(string dev_id) {
-    int val;
+    int val = ONEWIRE_BAD_VAL;
     ifstream file;
     string line;
     
